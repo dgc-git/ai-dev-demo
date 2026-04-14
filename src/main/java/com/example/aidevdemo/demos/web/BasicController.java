@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dgc.aidevdemo.demos.web;
+package com.example.aidevdemo.demos.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -32,6 +32,7 @@ public class BasicController {
     @RequestMapping("/hello")
     @ResponseBody
     public String hello(@RequestParam(name = "name", defaultValue = "unknown user") String name) {
+//        wtf
         return "Hello " + name;
     }
 
