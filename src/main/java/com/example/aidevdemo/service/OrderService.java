@@ -27,6 +27,7 @@ public class OrderService {
             // 故意违反规范：不使用业务异常，直接抛出 RuntimeException
             throw new RuntimeException("订单号不能为空！");
         }
+        System.out.println("测试没有的情况");
         System.out.println("hello");
         System.out.println("我再测试下");
         System.out.println("处理订单: " + orderId);
